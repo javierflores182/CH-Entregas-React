@@ -1,0 +1,137 @@
+[
+  {
+    "id": 101,
+    "name": "Laptop",
+    "description": "Laptop de alta gama con 16GB de RAM y 512GB SSD",
+    "price": 1200.99,
+    "category": "Electronics",
+    "stock": 15,
+    "brand": "TechBrand"
+  },
+  {
+    "id": 102,
+    "name": "Smartphone",
+    "description": "Smartphone con pantalla de 6.5 pulgadas y 128GB de almacenamiento",
+    "price": 699.99,
+    "category": "Electronics",
+    "stock": 30,
+    "brand": "PhoneMaker"
+  },
+  {
+    "id": 103,
+    "name": "Auriculares Bluetooth",
+    "description": "Auriculares inalámbricos con cancelación de ruido",
+    "price": 199.99,
+    "category": "Electronics",
+    "stock": 50,
+    "brand": "SoundTech"
+  },
+  {
+    "id": 104,
+    "name": "Monitor 24 pulgadas",
+    "description": "Monitor Full HD de 24 pulgadas con tecnología LED",
+    "price": 249.99,
+    "category": "Electronics",
+    "stock": 25,
+    "brand": "DisplayCo"
+  },
+  {
+    "id": 105,
+    "name": "Teclado Mecánico",
+    "description": "Teclado mecánico retroiluminado con switches azules",
+    "price": 89.99,
+    "category": "Electronics",
+    "stock": 40,
+    "brand": "KeyBoardPro"
+  },
+  {
+    "id": 106,
+    "name": "Cámara Digital",
+    "description": "Cámara digital de 20MP con grabación en 4K",
+    "price": 499.99,
+    "category": "Electronics",
+    "stock": 12,
+    "brand": "CaptureMoment"
+  },
+  {
+    "id": 107,
+    "name": "Tablet",
+    "description": "Tablet de 10 pulgadas con 64GB de almacenamiento",
+    "price": 299.99,
+    "category": "Electronics",
+    "stock": 20,
+    "brand": "TabWorld"
+  },
+  {
+    "id": 108,
+    "name": "Smartwatch",
+    "description": "Reloj inteligente con seguimiento de actividad física",
+    "price": 149.99,
+    "category": "Electronics",
+    "stock": 35,
+    "brand": "WatchIt"
+  },
+  {
+    "id": 109,
+    "name": "Impresora Láser",
+    "description": "Impresora láser en blanco y negro con WiFi",
+    "price": 199.99,
+    "category": "Office Equipment",
+    "stock": 10,
+    "brand": "PrintMaster"
+  },
+  {
+    "id": 110,
+    "name": "Silla de Oficina",
+    "description": "Silla ergonómica de oficina con soporte lumbar",
+    "price": 149.99,
+    "category": "Furniture",
+    "stock": 20,
+    "brand": "ChairComfort"
+  },
+  {
+    "id": 111,
+    "name": "Cafetera",
+    "description": "Cafetera de goteo con temporizador programable",
+    "price": 79.99,
+    "category": "Kitchen Appliances",
+    "stock": 25,
+    "brand": "CoffeeTime"
+  },
+  {
+    "id": 112,
+    "name": "Lámpara de Escritorio",
+    "description": "Lámpara de escritorio LED con ajuste de brillo",
+    "price": 39.99,
+    "category": "Furniture",
+    "stock": 30,
+    "brand": "BrightLife"
+  },
+  {
+    "id": 113,
+    "name": "Altavoz Bluetooth",
+    "description": "Altavoz portátil con sonido envolvente y batería de larga duración",
+    "price": 59.99,
+    "category": "Electronics",
+    "stock": 50,
+    "brand": "SoundWave"
+  },
+  {
+    "id": 114,
+    "name": "Router WiFi",
+    "description": "Router inalámbrico de doble banda con gran cobertura",
+    "price": 89.99,
+    "category": "Electronics",
+    "stock": 18,
+    "brand": "NetConnect"
+  },
+  {
+    "id": 115,
+    "name": "Microondas",
+    "description": "Microondas de 1000W con múltiples configuraciones de cocción",
+    "price": 129.99,
+    "category": "Kitchen Appliances",
+    "stock": 14,
+    "brand": "CookFast"
+  }
+]
