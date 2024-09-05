@@ -1,6 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import { useEffect, useState } from 'react';
-import data from '../data/productos.json'
+// import data from '../data/productos.json'
 import { Row, Col, Card } from 'react-bootstrap';
 import { NavLink,useParams } from 'react-router-dom';
 import { getFirestore, getDocs, where, query, collection } from 'firebase/firestore';

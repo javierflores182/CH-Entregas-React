@@ -1,16 +1,18 @@
 import Container from 'react-bootstrap/Container';
-import data from '../data/productos.json'
+// import data from '../data/productos.json'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { getFirestore, getDoc,doc } from 'firebase/firestore';
-
+import { ItemCount } from './itemCount';
+import { ItemsContext } from '../context/ItemsContext';
 
 export const ItemDetailContainer = () => {
     const [item,setItem]= useState([])
     const [loading, setLoading] = useState(true)
     const {id} = useParams()
+    const {addItem} = useContext(ItemsContext)
 
     // useEffect(()=>{
     //     new Promise((resolve)=>setTimeout(()=>resolve(data),2000))
@@ -33,6 +35,11 @@ export const ItemDetailContainer = () => {
         .finally(()=>setLoading(false))
     },[id])
 
+
+    const onAdd = (cantidad)=>{
+        addItem({...item,cantidad})
+    }
+
     if(loading) return "ESPERE"
     return <Container className='mt-4' >
         <h1>Detalle del producto</h1><br/>
@@ -47,5 +54,6 @@ export const ItemDetailContainer = () => {
         <ListGroup.Item><strong>Marca:</strong>  {item.brand}</ListGroup.Item>
       </ListGroup>
     </Card>
+    <ItemCount stock={item.stock} onAdd={onAdd} />
     </Container>;
 }
