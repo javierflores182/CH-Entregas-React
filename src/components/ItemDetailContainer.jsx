@@ -41,19 +41,26 @@ export const ItemDetailContainer = () => {
     }
 
     if(loading) return "ESPERE"
-    return <Container className='mt-4' >
-        <h1>Detalle del producto</h1><br/>
-         <Card style={{ width: '18rem' }}>
-      <ListGroup variant="flush">
-        <ListGroup.Item><strong>Codigo:</strong>  {item.codigo}</ListGroup.Item>
-        <ListGroup.Item><strong>Nombre:</strong>  {item.name}</ListGroup.Item>
-        <ListGroup.Item><strong>Descripcion:</strong>  {item.description}</ListGroup.Item>
-        <ListGroup.Item><strong>Precio:</strong>  {item.price}</ListGroup.Item>
-        <ListGroup.Item><strong>Categoria:</strong>  {item.category}</ListGroup.Item>
-        <ListGroup.Item><strong>En Stock:</strong>  {item.stock}</ListGroup.Item>
-        <ListGroup.Item><strong>Marca:</strong>  {item.brand}</ListGroup.Item>
-      </ListGroup>
-    </Card>
-    <ItemCount stock={item.stock} onAdd={onAdd} />
-    </Container>;
+    return (
+        <Container className='d-flex justify-content-center align-items-center vh-100'>
+        <div className="text-center">
+          <h1>Detalle del producto</h1>
+          <br/>
+          <Card style={{ width: '18rem' }}>
+            <ListGroup variant="flush">
+              <ListGroup.Item><strong>Codigo:</strong> {item.codigo}</ListGroup.Item>
+              <ListGroup.Item><strong>Nombre:</strong> {item.name}</ListGroup.Item>
+              <ListGroup.Item><strong>Descripcion:</strong> {item.description}</ListGroup.Item>
+              <ListGroup.Item><strong>Precio:</strong> {item.price}</ListGroup.Item>
+              <ListGroup.Item><strong>Categoria:</strong> {item.category}</ListGroup.Item>
+              <ListGroup.Item><strong>En Stock:</strong> {item.stock}</ListGroup.Item>
+              <ListGroup.Item><strong>Marca:</strong> {item.brand}</ListGroup.Item>
+              <ListGroup.Item>
+                <ItemCount stock={item.stock} onAdd={onAdd}/>
+              </ListGroup.Item>
+            </ListGroup>
+          </Card>
+        </div>
+      </Container>
+      )
 }
