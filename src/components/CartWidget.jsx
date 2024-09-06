@@ -10,7 +10,7 @@ export const CartWidget= () => {
     return (
         <Link to="/cart">
         <img src={Carrito} height={25}/>
-        <span>{cantidad}</span>
+        <span><strong>{cantidad}</strong></span>
         </Link>
     );
 };
